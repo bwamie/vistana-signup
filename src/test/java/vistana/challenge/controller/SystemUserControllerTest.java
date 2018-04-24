@@ -74,15 +74,6 @@ public void setUp() {
 	}
 
 	@Test
-	public void addUser() throws Exception {
-		when(systemUserService.getAllSecurityQuestions()).thenReturn(expectedQuestions);
-		when(systemUserService.getThreeSecurityQuestions()).thenReturn(expectedThreeQuestions);
-		mockMvc.perform(post("/signup")).andExpect(status().isOk());
-		verify(systemUserService, times(1)).getAllSecurityQuestions();
-		verify(systemUserService, times(1)).getThreeSecurityQuestions();
-	}
-
-	@Test
 	public void addUserSecurityQuestions() throws Exception {
 		assertTrue(systemUser != null);
 		when(systemUserService.getAllSecurityQuestions()).thenReturn(expectedQuestions);

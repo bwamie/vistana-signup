@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">3</div>
+<div class="counter">2</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.108s</div>
+<div class="counter">0.116s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,18 +78,13 @@
 </tr>
 </thead>
 <tr>
-<td class="success">addUser</td>
-<td>0.049s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
 <td class="success">addUserSecurityQuestions</td>
-<td>0.031s</td>
+<td>0.075s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">getSugnupForm</td>
-<td>0.028s</td>
+<td>0.041s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -97,114 +92,78 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2018-04-24 04:22:05 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
-2018-04-24 04:22:05 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
-2018-04-24 04:22:05 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
-2018-04-24 04:22:05 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
-2018-04-24 04:22:05 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped &quot;{[/signup],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.String vistana.challenge.controller.SystemUserController.getSugnupForm(vistana.challenge.domain.SystemUser)
-2018-04-24 04:22:05 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped &quot;{[/signup],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.String vistana.challenge.controller.SystemUserController.addUser(vistana.challenge.domain.SystemUser,javax.servlet.http.HttpSession,org.springframework.validation.BindingResult,org.springframework.ui.Model)
-2018-04-24 04:22:05 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped &quot;{[/signup-qns],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.String vistana.challenge.controller.SystemUserController.addUserSecurityQuestions(javax.servlet.http.HttpSession,org.springframework.web.context.request.WebRequest,org.springframework.ui.Model)
-2018-04-24 04:22:05 DEBUG RequestMappingHandlerAdapter:621 - Looking for controller advice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@6ecb8973
-2018-04-24 04:22:05 DEBUG TestDispatcherServlet:118 - Initializing servlet ''
-2018-04-24 04:22:05 DEBUG StandardServletEnvironment:112 - Initializing new StandardServletEnvironment
-2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
-2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [servletContextInitParams] PropertySource with lowest search precedence
-2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [jndiProperties] PropertySource with lowest search precedence
-2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
-2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
-2018-04-24 04:22:05 DEBUG StandardServletEnvironment:116 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
-2018-04-24 04:22:05 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
-2018-04-24 04:22:05 INFO  TestDispatcherServlet:461 - FrameworkServlet '': initialization started
-2018-04-24 04:22:05 DEBUG TestDispatcherServlet:487 - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
-2018-04-24 04:22:05 DEBUG TestDispatcherServlet:502 - Using LocaleResolver [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@b8ebe66]
-2018-04-24 04:22:05 DEBUG TestDispatcherServlet:524 - Using ThemeResolver [org.springframework.web.servlet.theme.FixedThemeResolver@393c2e75]
-2018-04-24 04:22:05 DEBUG TestDispatcherServlet:662 - Using RequestToViewNameTranslator [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@403259ba]
-2018-04-24 04:22:05 DEBUG TestDispatcherServlet:724 - Using FlashMapManager [org.springframework.web.servlet.support.SessionFlashMapManager@332729f]
-2018-04-24 04:22:05 DEBUG TestDispatcherServlet:540 - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
-2018-04-24 04:22:05 INFO  TestDispatcherServlet:480 - FrameworkServlet '': initialization completed in 1 ms
-2018-04-24 04:22:05 DEBUG TestDispatcherServlet:139 - Servlet '' configured successfully
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:843 - DispatcherServlet with name '' processing POST request for [/signup]
-2018-04-24 04:22:06 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:222 - Looking up handler method for path /signup
-2018-04-24 04:22:06 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:229 - Returning handler method [public java.lang.String vistana.challenge.controller.SystemUserController.addUser(vistana.challenge.domain.SystemUser,javax.servlet.http.HttpSession,org.springframework.validation.BindingResult,org.springframework.ui.Model)]
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:1222 - Rendering view [org.springframework.web.servlet.view.JstlView: unnamed; URL [signup-qns]] in DispatcherServlet with name ''
-2018-04-24 04:22:06 DEBUG JstlView:376 - Added model object 'systemUser' of type [vistana.challenge.domain.SystemUser] to request in view with name 'null'
-2018-04-24 04:22:06 DEBUG JstlView:376 - Added model object 'org.springframework.validation.BindingResult.systemUser' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name 'null'
-2018-04-24 04:22:06 DEBUG JstlView:376 - Added model object 'allSecurityQuestions' of type [java.util.HashMap] to request in view with name 'null'
-2018-04-24 04:22:06 DEBUG JstlView:207 - Forwarding to resource [signup-qns] in InternalResourceView 'null'
-2018-04-24 04:22:06 DEBUG MockRequestDispatcher:66 - MockRequestDispatcher: forwarding to [signup-qns]
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:961 - Successfully completed request
-2018-04-24 04:22:06 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
-2018-04-24 04:22:06 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
-2018-04-24 04:22:06 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
-2018-04-24 04:22:06 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
-2018-04-24 04:22:06 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped &quot;{[/signup],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.String vistana.challenge.controller.SystemUserController.getSugnupForm(vistana.challenge.domain.SystemUser)
-2018-04-24 04:22:06 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped &quot;{[/signup],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.String vistana.challenge.controller.SystemUserController.addUser(vistana.challenge.domain.SystemUser,javax.servlet.http.HttpSession,org.springframework.validation.BindingResult,org.springframework.ui.Model)
-2018-04-24 04:22:06 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped &quot;{[/signup-qns],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.String vistana.challenge.controller.SystemUserController.addUserSecurityQuestions(javax.servlet.http.HttpSession,org.springframework.web.context.request.WebRequest,org.springframework.ui.Model)
-2018-04-24 04:22:06 DEBUG RequestMappingHandlerAdapter:621 - Looking for controller advice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@2743bc17
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:118 - Initializing servlet ''
-2018-04-24 04:22:06 DEBUG StandardServletEnvironment:112 - Initializing new StandardServletEnvironment
-2018-04-24 04:22:06 DEBUG StandardServletEnvironment:110 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
-2018-04-24 04:22:06 DEBUG StandardServletEnvironment:110 - Adding [servletContextInitParams] PropertySource with lowest search precedence
-2018-04-24 04:22:06 DEBUG StandardServletEnvironment:110 - Adding [jndiProperties] PropertySource with lowest search precedence
-2018-04-24 04:22:06 DEBUG StandardServletEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
-2018-04-24 04:22:06 DEBUG StandardServletEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
-2018-04-24 04:22:06 DEBUG StandardServletEnvironment:116 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
-2018-04-24 04:22:06 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
-2018-04-24 04:22:06 INFO  TestDispatcherServlet:461 - FrameworkServlet '': initialization started
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:487 - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:502 - Using LocaleResolver [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@4425ea21]
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:524 - Using ThemeResolver [org.springframework.web.servlet.theme.FixedThemeResolver@7e3c55b6]
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:662 - Using RequestToViewNameTranslator [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4446273e]
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:724 - Using FlashMapManager [org.springframework.web.servlet.support.SessionFlashMapManager@e7c9b85]
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:540 - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
-2018-04-24 04:22:06 INFO  TestDispatcherServlet:480 - FrameworkServlet '': initialization completed in 3 ms
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:139 - Servlet '' configured successfully
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:843 - DispatcherServlet with name '' processing GET request for [/signup]
-2018-04-24 04:22:06 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:222 - Looking up handler method for path /signup
-2018-04-24 04:22:06 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:229 - Returning handler method [public java.lang.String vistana.challenge.controller.SystemUserController.getSugnupForm(vistana.challenge.domain.SystemUser)]
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:932 - Last-Modified value for [/signup] is: -1
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:1222 - Rendering view [org.springframework.web.servlet.view.JstlView: unnamed; URL [signup]] in DispatcherServlet with name ''
-2018-04-24 04:22:06 DEBUG JstlView:376 - Added model object 'systemUser' of type [vistana.challenge.domain.SystemUser] to request in view with name 'null'
-2018-04-24 04:22:06 DEBUG JstlView:376 - Added model object 'org.springframework.validation.BindingResult.systemUser' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name 'null'
-2018-04-24 04:22:06 DEBUG JstlView:207 - Forwarding to resource [signup] in InternalResourceView 'null'
-2018-04-24 04:22:06 DEBUG MockRequestDispatcher:66 - MockRequestDispatcher: forwarding to [signup]
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:961 - Successfully completed request
-2018-04-24 04:22:06 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
-2018-04-24 04:22:06 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
-2018-04-24 04:22:06 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
-2018-04-24 04:22:06 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
-2018-04-24 04:22:06 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped &quot;{[/signup],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.String vistana.challenge.controller.SystemUserController.getSugnupForm(vistana.challenge.domain.SystemUser)
-2018-04-24 04:22:06 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped &quot;{[/signup],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.String vistana.challenge.controller.SystemUserController.addUser(vistana.challenge.domain.SystemUser,javax.servlet.http.HttpSession,org.springframework.validation.BindingResult,org.springframework.ui.Model)
-2018-04-24 04:22:06 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped &quot;{[/signup-qns],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.String vistana.challenge.controller.SystemUserController.addUserSecurityQuestions(javax.servlet.http.HttpSession,org.springframework.web.context.request.WebRequest,org.springframework.ui.Model)
-2018-04-24 04:22:06 DEBUG RequestMappingHandlerAdapter:621 - Looking for controller advice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@662ec108
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:118 - Initializing servlet ''
-2018-04-24 04:22:06 DEBUG StandardServletEnvironment:112 - Initializing new StandardServletEnvironment
-2018-04-24 04:22:06 DEBUG StandardServletEnvironment:110 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
-2018-04-24 04:22:06 DEBUG StandardServletEnvironment:110 - Adding [servletContextInitParams] PropertySource with lowest search precedence
-2018-04-24 04:22:06 DEBUG StandardServletEnvironment:110 - Adding [jndiProperties] PropertySource with lowest search precedence
-2018-04-24 04:22:06 DEBUG StandardServletEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
-2018-04-24 04:22:06 DEBUG StandardServletEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
-2018-04-24 04:22:06 DEBUG StandardServletEnvironment:116 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
-2018-04-24 04:22:06 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
-2018-04-24 04:22:06 INFO  TestDispatcherServlet:461 - FrameworkServlet '': initialization started
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:487 - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:502 - Using LocaleResolver [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@3b40bc8b]
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:524 - Using ThemeResolver [org.springframework.web.servlet.theme.FixedThemeResolver@2b761c6a]
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:662 - Using RequestToViewNameTranslator [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1069330a]
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:724 - Using FlashMapManager [org.springframework.web.servlet.support.SessionFlashMapManager@1dd5c41b]
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:540 - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
-2018-04-24 04:22:06 INFO  TestDispatcherServlet:480 - FrameworkServlet '': initialization completed in 2 ms
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:139 - Servlet '' configured successfully
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:843 - DispatcherServlet with name '' processing POST request for [/signup-qns]
-2018-04-24 04:22:06 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:222 - Looking up handler method for path /signup-qns
-2018-04-24 04:22:06 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:229 - Returning handler method [public java.lang.String vistana.challenge.controller.SystemUserController.addUserSecurityQuestions(javax.servlet.http.HttpSession,org.springframework.web.context.request.WebRequest,org.springframework.ui.Model)]
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:1222 - Rendering view [org.springframework.web.servlet.view.JstlView: unnamed; URL [index]] in DispatcherServlet with name ''
-2018-04-24 04:22:06 DEBUG JstlView:376 - Added model object 'systemUser' of type [vistana.challenge.domain.SystemUser$$EnhancerByMockitoWithCGLIB$$f5467b6] to request in view with name 'null'
-2018-04-24 04:22:06 DEBUG JstlView:376 - Added model object 'message' of type [java.lang.String] to request in view with name 'null'
-2018-04-24 04:22:06 DEBUG JstlView:376 - Added model object 'org.springframework.validation.BindingResult.systemUser' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name 'null'
-2018-04-24 04:22:06 DEBUG JstlView:207 - Forwarding to resource [index] in InternalResourceView 'null'
-2018-04-24 04:22:06 DEBUG MockRequestDispatcher:66 - MockRequestDispatcher: forwarding to [index]
-2018-04-24 04:22:06 DEBUG TestDispatcherServlet:961 - Successfully completed request
+<pre>2018-04-24 10:59:19 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+2018-04-24 10:59:19 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+2018-04-24 10:59:19 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-04-24 10:59:19 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-04-24 10:59:19 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped &quot;{[/signup],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.String vistana.challenge.controller.SystemUserController.getSugnupForm(vistana.challenge.domain.SystemUser)
+2018-04-24 10:59:19 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped &quot;{[/signup],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.String vistana.challenge.controller.SystemUserController.addUser(javax.servlet.http.HttpSession,vistana.challenge.domain.SystemUser,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-04-24 10:59:19 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped &quot;{[/signup-qns],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.String vistana.challenge.controller.SystemUserController.addUserSecurityQuestions(javax.servlet.http.HttpSession,org.springframework.web.context.request.WebRequest,org.springframework.ui.Model)
+2018-04-24 10:59:19 DEBUG RequestMappingHandlerAdapter:621 - Looking for controller advice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@3403b908
+2018-04-24 10:59:19 DEBUG TestDispatcherServlet:118 - Initializing servlet ''
+2018-04-24 10:59:19 DEBUG StandardServletEnvironment:112 - Initializing new StandardServletEnvironment
+2018-04-24 10:59:19 DEBUG StandardServletEnvironment:110 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2018-04-24 10:59:19 DEBUG StandardServletEnvironment:110 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2018-04-24 10:59:19 DEBUG StandardServletEnvironment:110 - Adding [jndiProperties] PropertySource with lowest search precedence
+2018-04-24 10:59:19 DEBUG StandardServletEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+2018-04-24 10:59:19 DEBUG StandardServletEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-04-24 10:59:19 DEBUG StandardServletEnvironment:116 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2018-04-24 10:59:19 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2018-04-24 10:59:19 INFO  TestDispatcherServlet:461 - FrameworkServlet '': initialization started
+2018-04-24 10:59:19 DEBUG TestDispatcherServlet:487 - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+2018-04-24 10:59:19 DEBUG TestDispatcherServlet:502 - Using LocaleResolver [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@69a89dd3]
+2018-04-24 10:59:19 DEBUG TestDispatcherServlet:524 - Using ThemeResolver [org.springframework.web.servlet.theme.FixedThemeResolver@6c55e842]
+2018-04-24 10:59:19 DEBUG TestDispatcherServlet:662 - Using RequestToViewNameTranslator [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2e308e4a]
+2018-04-24 10:59:19 DEBUG TestDispatcherServlet:724 - Using FlashMapManager [org.springframework.web.servlet.support.SessionFlashMapManager@3b569748]
+2018-04-24 10:59:19 DEBUG TestDispatcherServlet:540 - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+2018-04-24 10:59:19 INFO  TestDispatcherServlet:480 - FrameworkServlet '': initialization completed in 1 ms
+2018-04-24 10:59:19 DEBUG TestDispatcherServlet:139 - Servlet '' configured successfully
+2018-04-24 10:59:19 DEBUG TestDispatcherServlet:843 - DispatcherServlet with name '' processing GET request for [/signup]
+2018-04-24 10:59:19 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:222 - Looking up handler method for path /signup
+2018-04-24 10:59:19 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:229 - Returning handler method [public java.lang.String vistana.challenge.controller.SystemUserController.getSugnupForm(vistana.challenge.domain.SystemUser)]
+2018-04-24 10:59:19 DEBUG TestDispatcherServlet:932 - Last-Modified value for [/signup] is: -1
+2018-04-24 10:59:19 DEBUG TestDispatcherServlet:1222 - Rendering view [org.springframework.web.servlet.view.JstlView: unnamed; URL [signup]] in DispatcherServlet with name ''
+2018-04-24 10:59:19 DEBUG JstlView:376 - Added model object 'systemUser' of type [vistana.challenge.domain.SystemUser] to request in view with name 'null'
+2018-04-24 10:59:19 DEBUG JstlView:376 - Added model object 'org.springframework.validation.BindingResult.systemUser' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name 'null'
+2018-04-24 10:59:19 DEBUG JstlView:207 - Forwarding to resource [signup] in InternalResourceView 'null'
+2018-04-24 10:59:19 DEBUG MockRequestDispatcher:66 - MockRequestDispatcher: forwarding to [signup]
+2018-04-24 10:59:19 DEBUG TestDispatcherServlet:961 - Successfully completed request
+2018-04-24 10:59:19 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+2018-04-24 10:59:19 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+2018-04-24 10:59:19 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-04-24 10:59:19 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-04-24 10:59:19 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped &quot;{[/signup],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.String vistana.challenge.controller.SystemUserController.getSugnupForm(vistana.challenge.domain.SystemUser)
+2018-04-24 10:59:19 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped &quot;{[/signup],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.String vistana.challenge.controller.SystemUserController.addUser(javax.servlet.http.HttpSession,vistana.challenge.domain.SystemUser,org.springframework.validation.BindingResult,org.springframework.ui.Model)
+2018-04-24 10:59:19 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped &quot;{[/signup-qns],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.String vistana.challenge.controller.SystemUserController.addUserSecurityQuestions(javax.servlet.http.HttpSession,org.springframework.web.context.request.WebRequest,org.springframework.ui.Model)
+2018-04-24 10:59:19 DEBUG RequestMappingHandlerAdapter:621 - Looking for controller advice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@764ef285
+2018-04-24 10:59:19 DEBUG TestDispatcherServlet:118 - Initializing servlet ''
+2018-04-24 10:59:19 DEBUG StandardServletEnvironment:112 - Initializing new StandardServletEnvironment
+2018-04-24 10:59:19 DEBUG StandardServletEnvironment:110 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2018-04-24 10:59:19 DEBUG StandardServletEnvironment:110 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2018-04-24 10:59:19 DEBUG StandardServletEnvironment:110 - Adding [jndiProperties] PropertySource with lowest search precedence
+2018-04-24 10:59:19 DEBUG StandardServletEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+2018-04-24 10:59:19 DEBUG StandardServletEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-04-24 10:59:19 DEBUG StandardServletEnvironment:116 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2018-04-24 10:59:19 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2018-04-24 10:59:19 INFO  TestDispatcherServlet:461 - FrameworkServlet '': initialization started
+2018-04-24 10:59:19 DEBUG TestDispatcherServlet:487 - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+2018-04-24 10:59:19 DEBUG TestDispatcherServlet:502 - Using LocaleResolver [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@6ef08380]
+2018-04-24 10:59:19 DEBUG TestDispatcherServlet:524 - Using ThemeResolver [org.springframework.web.servlet.theme.FixedThemeResolver@6fab9e01]
+2018-04-24 10:59:19 DEBUG TestDispatcherServlet:662 - Using RequestToViewNameTranslator [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@30fba85d]
+2018-04-24 10:59:19 DEBUG TestDispatcherServlet:724 - Using FlashMapManager [org.springframework.web.servlet.support.SessionFlashMapManager@70bf9074]
+2018-04-24 10:59:19 DEBUG TestDispatcherServlet:540 - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+2018-04-24 10:59:19 INFO  TestDispatcherServlet:480 - FrameworkServlet '': initialization completed in 2 ms
+2018-04-24 10:59:19 DEBUG TestDispatcherServlet:139 - Servlet '' configured successfully
+2018-04-24 10:59:19 DEBUG TestDispatcherServlet:843 - DispatcherServlet with name '' processing POST request for [/signup-qns]
+2018-04-24 10:59:19 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:222 - Looking up handler method for path /signup-qns
+2018-04-24 10:59:19 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:229 - Returning handler method [public java.lang.String vistana.challenge.controller.SystemUserController.addUserSecurityQuestions(javax.servlet.http.HttpSession,org.springframework.web.context.request.WebRequest,org.springframework.ui.Model)]
+2018-04-24 10:59:19 DEBUG TestDispatcherServlet:1222 - Rendering view [org.springframework.web.servlet.view.JstlView: unnamed; URL [index]] in DispatcherServlet with name ''
+2018-04-24 10:59:19 DEBUG JstlView:376 - Added model object 'systemUser' of type [vistana.challenge.domain.SystemUser$$EnhancerByMockitoWithCGLIB$$68157694] to request in view with name 'null'
+2018-04-24 10:59:19 DEBUG JstlView:376 - Added model object 'message' of type [java.lang.String] to request in view with name 'null'
+2018-04-24 10:59:19 DEBUG JstlView:376 - Added model object 'org.springframework.validation.BindingResult.systemUser' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name 'null'
+2018-04-24 10:59:19 DEBUG JstlView:207 - Forwarding to resource [index] in InternalResourceView 'null'
+2018-04-24 10:59:19 DEBUG MockRequestDispatcher:66 - MockRequestDispatcher: forwarding to [index]
+2018-04-24 10:59:19 DEBUG TestDispatcherServlet:961 - Successfully completed request
 </pre>
 </span>
 </div>
@@ -216,7 +175,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.6</a> at Apr 24, 2018 4:22:06 AM</p>
+<a href="http://www.gradle.org">Gradle 4.6</a> at Apr 24, 2018 10:59:20 AM</p>
 </div>
 </div>
 </body>
