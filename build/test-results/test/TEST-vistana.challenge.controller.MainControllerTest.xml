@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="vistana.challenge.controller.MainControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2018-04-24T08:22:05" hostname="W7-PC0M6N1V" time="0.175">
+  <properties/>
+  <testcase name="index2" classname="vistana.challenge.controller.MainControllerTest" time="0.057"/>
+  <testcase name="home" classname="vistana.challenge.controller.MainControllerTest" time="0.037"/>
+  <testcase name="error" classname="vistana.challenge.controller.MainControllerTest" time="0.038"/>
+  <testcase name="index" classname="vistana.challenge.controller.MainControllerTest" time="0.04"/>
+  <system-out><![CDATA[2018-04-24 04:22:05 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+2018-04-24 04:22:05 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-04-24 04:22:05 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String vistana.challenge.controller.MainController.index()
+2018-04-24 04:22:05 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String vistana.challenge.controller.MainController.error()
+2018-04-24 04:22:05 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped "{[/index],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String vistana.challenge.controller.MainController.index2()
+2018-04-24 04:22:05 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped "{[/home],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String vistana.challenge.controller.MainController.home(javax.servlet.http.HttpSession,org.springframework.ui.Model)
+2018-04-24 04:22:05 DEBUG RequestMappingHandlerAdapter:621 - Looking for controller advice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@6141b241
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:118 - Initializing servlet ''
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:112 - Initializing new StandardServletEnvironment
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [jndiProperties] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:116 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2018-04-24 04:22:05 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2018-04-24 04:22:05 INFO  TestDispatcherServlet:461 - FrameworkServlet '': initialization started
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:487 - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:502 - Using LocaleResolver [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@7a7c5830]
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:524 - Using ThemeResolver [org.springframework.web.servlet.theme.FixedThemeResolver@16433e84]
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:662 - Using RequestToViewNameTranslator [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2544c158]
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:724 - Using FlashMapManager [org.springframework.web.servlet.support.SessionFlashMapManager@5186665e]
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:540 - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+2018-04-24 04:22:05 INFO  TestDispatcherServlet:480 - FrameworkServlet '': initialization completed in 9 ms
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:139 - Servlet '' configured successfully
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:843 - DispatcherServlet with name '' processing GET request for [/index]
+2018-04-24 04:22:05 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:222 - Looking up handler method for path /index
+2018-04-24 04:22:05 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:229 - Returning handler method [public java.lang.String vistana.challenge.controller.MainController.index2()]
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:932 - Last-Modified value for [/index] is: -1
+2018-04-24 04:22:05 INFO  MainController:27 - At index page :::::::::::::::::::: 
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:1222 - Rendering view [org.springframework.web.servlet.view.JstlView: unnamed; URL [index]] in DispatcherServlet with name ''
+2018-04-24 04:22:05 DEBUG JstlView:207 - Forwarding to resource [index] in InternalResourceView 'null'
+2018-04-24 04:22:05 DEBUG MockRequestDispatcher:66 - MockRequestDispatcher: forwarding to [index]
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:961 - Successfully completed request
+2018-04-24 04:22:05 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+2018-04-24 04:22:05 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-04-24 04:22:05 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String vistana.challenge.controller.MainController.index()
+2018-04-24 04:22:05 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String vistana.challenge.controller.MainController.error()
+2018-04-24 04:22:05 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped "{[/index],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String vistana.challenge.controller.MainController.index2()
+2018-04-24 04:22:05 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped "{[/home],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String vistana.challenge.controller.MainController.home(javax.servlet.http.HttpSession,org.springframework.ui.Model)
+2018-04-24 04:22:05 DEBUG RequestMappingHandlerAdapter:621 - Looking for controller advice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@49a30986
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:118 - Initializing servlet ''
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:112 - Initializing new StandardServletEnvironment
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [jndiProperties] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:116 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2018-04-24 04:22:05 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2018-04-24 04:22:05 INFO  TestDispatcherServlet:461 - FrameworkServlet '': initialization started
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:487 - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:502 - Using LocaleResolver [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@2700d4d0]
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:524 - Using ThemeResolver [org.springframework.web.servlet.theme.FixedThemeResolver@763e068f]
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:662 - Using RequestToViewNameTranslator [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6df7b399]
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:724 - Using FlashMapManager [org.springframework.web.servlet.support.SessionFlashMapManager@1f26736b]
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:540 - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+2018-04-24 04:22:05 INFO  TestDispatcherServlet:480 - FrameworkServlet '': initialization completed in 2 ms
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:139 - Servlet '' configured successfully
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:843 - DispatcherServlet with name '' processing GET request for [/home]
+2018-04-24 04:22:05 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:222 - Looking up handler method for path /home
+2018-04-24 04:22:05 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:229 - Returning handler method [public java.lang.String vistana.challenge.controller.MainController.home(javax.servlet.http.HttpSession,org.springframework.ui.Model)]
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:932 - Last-Modified value for [/home] is: -1
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:1222 - Rendering view [org.springframework.web.servlet.view.JstlView: unnamed; URL [login]] in DispatcherServlet with name ''
+2018-04-24 04:22:05 DEBUG JstlView:376 - Added model object 'message' of type [java.lang.String] to request in view with name 'null'
+2018-04-24 04:22:05 DEBUG JstlView:207 - Forwarding to resource [login] in InternalResourceView 'null'
+2018-04-24 04:22:05 DEBUG MockRequestDispatcher:66 - MockRequestDispatcher: forwarding to [login]
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:961 - Successfully completed request
+2018-04-24 04:22:05 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+2018-04-24 04:22:05 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-04-24 04:22:05 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String vistana.challenge.controller.MainController.index()
+2018-04-24 04:22:05 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String vistana.challenge.controller.MainController.error()
+2018-04-24 04:22:05 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped "{[/index],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String vistana.challenge.controller.MainController.index2()
+2018-04-24 04:22:05 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped "{[/home],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String vistana.challenge.controller.MainController.home(javax.servlet.http.HttpSession,org.springframework.ui.Model)
+2018-04-24 04:22:05 DEBUG RequestMappingHandlerAdapter:621 - Looking for controller advice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@3ea1920b
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:118 - Initializing servlet ''
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:112 - Initializing new StandardServletEnvironment
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [jndiProperties] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:116 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2018-04-24 04:22:05 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2018-04-24 04:22:05 INFO  TestDispatcherServlet:461 - FrameworkServlet '': initialization started
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:487 - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:502 - Using LocaleResolver [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@76848eda]
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:524 - Using ThemeResolver [org.springframework.web.servlet.theme.FixedThemeResolver@217725a5]
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:662 - Using RequestToViewNameTranslator [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7e08af6c]
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:724 - Using FlashMapManager [org.springframework.web.servlet.support.SessionFlashMapManager@19c7e83]
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:540 - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+2018-04-24 04:22:05 INFO  TestDispatcherServlet:480 - FrameworkServlet '': initialization completed in 2 ms
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:139 - Servlet '' configured successfully
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:843 - DispatcherServlet with name '' processing GET request for [/error]
+2018-04-24 04:22:05 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:222 - Looking up handler method for path /error
+2018-04-24 04:22:05 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:229 - Returning handler method [public java.lang.String vistana.challenge.controller.MainController.error()]
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:932 - Last-Modified value for [/error] is: -1
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:1222 - Rendering view [org.springframework.web.servlet.view.JstlView: unnamed; URL [error]] in DispatcherServlet with name ''
+2018-04-24 04:22:05 DEBUG JstlView:207 - Forwarding to resource [error] in InternalResourceView 'null'
+2018-04-24 04:22:05 DEBUG MockRequestDispatcher:66 - MockRequestDispatcher: forwarding to [error]
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:961 - Successfully completed request
+2018-04-24 04:22:05 DEBUG StandardEnvironment:112 - Initializing new StandardEnvironment
+2018-04-24 04:22:05 DEBUG StandardEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardEnvironment:116 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-04-24 04:22:05 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String vistana.challenge.controller.MainController.index()
+2018-04-24 04:22:05 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String vistana.challenge.controller.MainController.error()
+2018-04-24 04:22:05 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped "{[/index],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String vistana.challenge.controller.MainController.index2()
+2018-04-24 04:22:05 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:181 - Mapped "{[/home],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String vistana.challenge.controller.MainController.home(javax.servlet.http.HttpSession,org.springframework.ui.Model)
+2018-04-24 04:22:05 DEBUG RequestMappingHandlerAdapter:621 - Looking for controller advice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@533cc234
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:118 - Initializing servlet ''
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:112 - Initializing new StandardServletEnvironment
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [jndiProperties] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [systemProperties] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-04-24 04:22:05 DEBUG StandardServletEnvironment:116 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+2018-04-24 04:22:05 INFO  MockServletContext:390 - Initializing Spring FrameworkServlet ''
+2018-04-24 04:22:05 INFO  TestDispatcherServlet:461 - FrameworkServlet '': initialization started
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:487 - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:502 - Using LocaleResolver [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@123c3ad4]
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:524 - Using ThemeResolver [org.springframework.web.servlet.theme.FixedThemeResolver@272467c5]
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:662 - Using RequestToViewNameTranslator [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@181a258d]
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:724 - Using FlashMapManager [org.springframework.web.servlet.support.SessionFlashMapManager@593cc32b]
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:540 - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+2018-04-24 04:22:05 INFO  TestDispatcherServlet:480 - FrameworkServlet '': initialization completed in 2 ms
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:139 - Servlet '' configured successfully
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:843 - DispatcherServlet with name '' processing GET request for [/]
+2018-04-24 04:22:05 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:222 - Looking up handler method for path /
+2018-04-24 04:22:05 DEBUG StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:229 - Returning handler method [public java.lang.String vistana.challenge.controller.MainController.index()]
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:932 - Last-Modified value for [/] is: -1
+2018-04-24 04:22:05 INFO  MainController:21 - At index page :::::::::::::::::::: 
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:1222 - Rendering view [org.springframework.web.servlet.view.JstlView: unnamed; URL [index]] in DispatcherServlet with name ''
+2018-04-24 04:22:05 DEBUG JstlView:207 - Forwarding to resource [index] in InternalResourceView 'null'
+2018-04-24 04:22:05 DEBUG MockRequestDispatcher:66 - MockRequestDispatcher: forwarding to [index]
+2018-04-24 04:22:05 DEBUG TestDispatcherServlet:961 - Successfully completed request
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

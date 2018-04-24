@@ -1,0 +1,129 @@
+@charset "ISO-8859-1";
+
+body {
+	background-color: #F9F7F6;
+	color: #000;
+	text-align: centeral;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+.main {
+	
+}
+
+.header {
+	
+}
+
+.content {
+	text-align: center;
+	vertical-align: middle;
+	line-height: 90px;
+	position: relative;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	width: 100%;
+}
+
+.copyright {
+	
+}
+
+.center {
+	margin: auto;
+	width: 100%;
+	border: 0px;
+	padding: 10px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+h1 {
+	margin-bottom: .5rem;
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.2;
+	color: inherit;
+}
+
+hr {
+	
+}
+
+.top-heading{
+	width: 100%;
+	position: relative;
+	vertical-align: top;
+}
+
+.full{
+	width: 100%;
+}
+
+.clear{
+	clear:both;
+}
+
+.signup-box{
+	width: 50%;
+	border: 1px solid gray;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    /* margin-bottom: 16px; Bottom margin */
+    /*resize: vertical  Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit], input[type=button], input[type=reset] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.h2{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.error{
+	color: red;
+	font-size: 12px;
+}
