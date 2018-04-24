@@ -33,7 +33,6 @@
 				<a	href="logout"><spring:message code="label.logout" /></a> |
 				</c:if>
 				<c:if test="${LOGGEDIN ne true}">
-					<a href="#"><spring:message code="label.login" /> </a>  | 
 					<a href="signup"><spring:message code="label.signup" /></a> 
 					</c:if>
 			</div>
